@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import axiosInstance from "../../axiosConfig";
+import { useNavigate } from "react-router-dom";
 
 const Login = ({ setToken }) => {
   const [formData, setFormData] = useState({ username: "", password: "" });
   const [error, setError] = useState("");
-
+  const navigate = useNavigate();
   const loginSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -13,11 +14,11 @@ const Login = ({ setToken }) => {
       localStorage.setItem("token", token);
       setToken(token); // Save token in parent state
       setError("");
+      navigate("/");
     } catch (err) {
       setError("Invalid username or password.");
     }
   };
-
   return (
     <div className="p-6 bg-gray-100 min-h-screen flex justify-center items-center">
       <form
