@@ -64,7 +64,7 @@ const Account = () => {
               <h2 className="text-xl font-semibold text-gray-800">
                 {account.title}
               </h2>
-              <p className="text-gray-600">Balance: ${account.balance}</p>
+              <p className="text-gray-600">Balance: {account.balance}</p>
               <button
                 onClick={() => handleDelete(account.id)}
                 className="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600">

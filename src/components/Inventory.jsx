@@ -64,8 +64,8 @@ const Inventory = () => {
               <h2 className="text-xl font-semibold text-gray-800">
                 {item.name}
               </h2>
-              <p className="text-gray-600">Cost: ${item.cost}</p>
-              <p className="text-gray-600">Price: ${item.price}</p>
+              <p className="text-gray-600">Cost: {item.cost}</p>
+              <p className="text-gray-600">Price: {item.price}</p>
               <button
                 onClick={() => handleDelete(item.id)}
                 className="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600">

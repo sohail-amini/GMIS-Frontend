@@ -22,7 +22,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-indigo-700 border-b border-indigo-500 w-full">
+    <nav className="bg-blue-700 border-b border-blue-500 w-full">
       <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
@@ -49,7 +49,6 @@ const Navbar = () => {
               Account
             </NavLink>
           </div>
-
           {/* Logout Button */}
           <button
             onClick={logoutFunc}
