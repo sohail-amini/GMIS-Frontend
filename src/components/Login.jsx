@@ -5,7 +5,7 @@ const Login = ({ setToken }) => {
   const [formData, setFormData] = useState({ username: "", password: "" });
   const [error, setError] = useState("");
 
-  const handleSubmit = async (e) => {
+  const loginSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await axiosInstance.post("auth/get_token/", formData);
@@ -21,7 +21,7 @@ const Login = ({ setToken }) => {
   return (
     <div className="p-6 bg-gray-100 min-h-screen flex justify-center items-center">
       <form
-        onSubmit={handleSubmit}
+        onSubmit={loginSubmit}
         className="bg-white p-6 shadow-lg rounded-lg w-full max-w-md">
         <h1 className="text-2xl font-bold mb-4">Login</h1>
         {error && <p className="text-red-500 mb-4">{error}</p>}
