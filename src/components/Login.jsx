@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axiosInstance from "../../axiosConfig";
 import { useNavigate } from "react-router-dom";
+import bg from "../assets/images/bg.jpg";
 
 const Login = ({ setToken }) => {
   const [formData, setFormData] = useState({ username: "", password: "" });
@@ -20,7 +21,14 @@ const Login = ({ setToken }) => {
     }
   };
   return (
-    <div className="p-6 bg-gray-100 min-h-screen flex justify-center items-center">
+    <div
+      className="min-h-screen flex justify-center items-center"
+      style={{
+        backgroundImage: `url(${bg})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}>
       <form
         onSubmit={loginSubmit}
         className="bg-white p-6 shadow-lg rounded-lg w-full max-w-md">

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import Login from "./components/Login";
-import Account from "./components/Account";
-import Inventory from "./components/Inventory";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./components/Login";
 import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/HomePage";
+import Inventory from "./components/Inventory";
+import Account from "./components/Account";
+
 const App = () => {
   return (
     <Router>

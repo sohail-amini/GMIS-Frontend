@@ -1,7 +1,7 @@
-import { NavLink, redirect, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Login from "./Login";
-import logo from "../assets/images/gym.png";
+import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const [token, setToken] = useState(localStorage.getItem("token") || null);
@@ -22,7 +22,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-blue-700 border-b border-blue-500 w-full">
+    <nav className="bg-slate-600 border-b border-slate-500 w-full">
       <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
