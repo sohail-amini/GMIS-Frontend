@@ -45,8 +45,14 @@ const Navbar = () => {
             <NavLink to="/inventory" className={activeLink}>
               Inventory
             </NavLink>
+            <NavLink to="/supplier" className={activeLink}>
+              Supplier
+            </NavLink>
             <NavLink to="/account" className={activeLink}>
               Account
+            </NavLink>
+            <NavLink to="/transaction" className={activeLink}>
+              Transaction
             </NavLink>
           </div>
           {/* Logout Button */}
